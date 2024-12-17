@@ -3,9 +3,9 @@ import { jabones } from "@/data";
 
 const JabonesContainer = () => {
   return (
-    <div className="flex justify-center flex-wrap">
-      {jabones.map((p) => {
-        return <Card product={p} />;
+    <div className="flex justify-center flex-wrap sm:pt-10 md:pt-1">
+      {jabones.map((p, index) => {
+        return <Card product={p} key={index} />;
       })}
     </div>
   );

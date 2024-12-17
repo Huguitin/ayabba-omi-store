@@ -6,7 +6,7 @@ const App = () => {
     <div>
       <NavBar />
       <div className=" items-center justify-items-center min-h-screen pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <div className="mt-6">
+        <div className="lg:mt-6 sm:mt-22">
           <JabonesContainer />
         </div>
       </div>

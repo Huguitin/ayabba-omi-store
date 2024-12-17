@@ -3,20 +3,17 @@ import { Product } from "@/types";
 const Card = ({ product }: Props) => {
   return (
     <div
-      className="card card-compact bg-base-100 w-96 shadow-xl m-4"
+      className="card card-compact bg-base-100 lg:w-96 sm:w-50 shadow-xl m-4 lg:h-[20vw] md:h-[40vw] sm:h-[35vw]"
       key={product.id}
     >
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-        />
+        <img src={product.images?.[0]} alt={product.name} />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 className="card-title">{product.name}</h2>
+        <p>{`Precio: ${product.price} USD`}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn bg-blue-700 text-white">Ver más</button>
         </div>
       </div>
     </div>

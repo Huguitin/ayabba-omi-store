@@ -1,11 +1,11 @@
 const NavBar = () => {
   return (
-    <div className="navbar bg-stone-200 pt-4 shadow-lg shadow-blue-300 h-24 fixed z-40">
-      <div className="w-[10vw]  rounded-full z-42 translate-x-5 translate-y-10 shadow-lg shadow-blue-300">
+    <div className="navbar bg-base-100 lg:pt-4 shadow-lg shadow-blue-300 lg:h-24 h-10 fixed z-40">
+      <div className="lg:w-[10vw] w-[20vw] rounded-full z-42 lg:translate-x-5 lg:translate-y-10 shadow-lg shadow-blue-300">
         <img alt="logo" src="/img/logo.webp" className="rounded-full" />
       </div>
-      <div className="navbar-start ml-8">
-        <span className="h-auto font-bold text-blue-700 font-serif text-6xl">
+      <div className="navbar-start lg:ml-8 ml-4">
+        <span className="h-auto font-bold text-blue-700 font-serif lg:text-6xl md:text-4xl">
           Ayabba Omi Store
         </span>
       </div>
