@@ -6,7 +6,7 @@ const Carrucel = ({ products }: Props) => {
     <>
       <div className="carousel w-full">
         {products.map((p) => {
-          return <Card product={p} />;
+          return <Card product={p} key={p.id} />;
         })}
       </div>
       <div className="flex w-full justify-center gap-2 py-1">
